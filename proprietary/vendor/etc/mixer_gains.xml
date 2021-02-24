@@ -177,6 +177,18 @@
 		<ctl name="Right Digital PCM Volume" value="817" />
 	</path>
 
+	<path name="gain-communication-tv-speaker">
+		<ctl name="Right AMP PCM Gain" value="18" />
+		<ctl name="Right Digital PCM Volume" value="817" />
+	</path>
+
+	<path name="gain-communication-tv-dual-speaker">
+		<ctl name="Left AMP PCM Gain" value="18" />
+		<ctl name="Left Digital PCM Volume" value="817" />
+		<ctl name="Right AMP PCM Gain" value="18" />
+		<ctl name="Right Digital PCM Volume" value="817" />
+	</path>
+
 	<path name="gain-communication-bt-sco-headset">
 	</path>
 
@@ -916,6 +928,15 @@
 	<path name="gain-camcorder-usb-headset-mic">
 	</path>
 
+	<path name="gain-camcorder-multi-mic-bt-sco-headset-in">
+		<ctl name="VTS DMIC GAIN MODE0" value="6168" />
+		<ctl name="VTS DMIC GAIN MODE1" value="6168" />
+		<ctl name="VTS DMIC GAIN MODE2" value="6168" />
+		<ctl name="VTS CONTROL DMIC AUD GAIN0" value="0" />
+		<ctl name="VTS CONTROL DMIC AUD GAIN1" value="0" />
+		<ctl name="VTS CONTROL DMIC AUD GAIN2" value="0" />
+	</path>
+
 	<!-- recognition input volume -->
 	<path name="gain-recognition-mic">
 		<ctl name="VTS DMIC GAIN MODE0" value="5140" />
@@ -1056,6 +1077,24 @@
 		<ctl name="VTS CONTROL DMIC AUD GAIN0" value="8" />
 		<ctl name="VTS CONTROL DMIC AUD GAIN1" value="8" />
 		<ctl name="VTS CONTROL DMIC AUD GAIN2" value="8" />
+	</path>
+
+	<path name="gain-communication-tv-speaker-mic">
+		<ctl name="VTS DMIC GAIN MODE0" value="6168" />
+		<ctl name="VTS DMIC GAIN MODE1" value="6168" />
+		<ctl name="VTS DMIC GAIN MODE2" value="6168" />
+		<ctl name="VTS CONTROL DMIC AUD GAIN0" value="4" />
+		<ctl name="VTS CONTROL DMIC AUD GAIN1" value="4" />
+		<ctl name="VTS CONTROL DMIC AUD GAIN2" value="4" />
+	</path>
+
+	<path name="gain-communication-tv-dual-speaker-mic">
+		<ctl name="VTS DMIC GAIN MODE0" value="6168" />
+		<ctl name="VTS DMIC GAIN MODE1" value="6168" />
+		<ctl name="VTS DMIC GAIN MODE2" value="6168" />
+		<ctl name="VTS CONTROL DMIC AUD GAIN0" value="4" />
+		<ctl name="VTS CONTROL DMIC AUD GAIN1" value="4" />
+		<ctl name="VTS CONTROL DMIC AUD GAIN2" value="4" />
 	</path>
 
 	<path name="gain-communication-headphone-mic">

@@ -23,7 +23,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/x1s/proprietary/system/lib/libsecnativefeature.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsecnativefeature.so \
     vendor/samsung/x1s/proprietary/system/lib/libsecril-client.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsecril-client.so \
     vendor/samsung/x1s/proprietary/system/lib/libsecure_storage.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsecure_storage.so \
-    vendor/samsung/x1s/proprietary/system/lib/libstagefright_omx_utils.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libstagefright_omx_utils.so \
     vendor/samsung/x1s/proprietary/system/lib/vendor.samsung.hardware.security.widevine.keyprov@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.samsung.hardware.security.widevine.keyprov@1.0.so \
     vendor/samsung/x1s/proprietary/system/lib/vendor.samsung_slsi.hardware.ExynosHWCServiceTW@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.samsung_slsi.hardware.ExynosHWCServiceTW@1.0.so \
     vendor/samsung/x1s/proprietary/system/lib/vendor.samsung_slsi.hardware.configstore-utils.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.samsung_slsi.hardware.configstore-utils.so \
@@ -40,7 +39,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/x1s/proprietary/system/lib64/libsecnativefeature.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsecnativefeature.so \
     vendor/samsung/x1s/proprietary/system/lib64/libsecril-client.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsecril-client.so \
     vendor/samsung/x1s/proprietary/system/lib64/libsecure_storage.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsecure_storage.so \
-    vendor/samsung/x1s/proprietary/system/lib64/libstagefright_omx_utils.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libstagefright_omx_utils.so \
     vendor/samsung/x1s/proprietary/system/lib64/vendor.samsung.hardware.nfc@2.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.samsung.hardware.nfc@2.0.so \
     vendor/samsung/x1s/proprietary/system/lib64/vendor.samsung.hardware.security.widevine.keyprov@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.samsung.hardware.security.widevine.keyprov@1.0.so \
     vendor/samsung/x1s/proprietary/system/lib64/vendor.samsung_slsi.hardware.ExynosHWCServiceTW@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.samsung_slsi.hardware.ExynosHWCServiceTW@1.0.so \
@@ -127,12 +125,14 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/x1s/proprietary/vendor/firmware/APBiBF_AUDIO_SLSI.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/APBiBF_AUDIO_SLSI.bin \
     vendor/samsung/x1s/proprietary/vendor/firmware/APDV_AUDIO_SLSI.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/APDV_AUDIO_SLSI.bin \
     vendor/samsung/x1s/proprietary/vendor/firmware/APSV_AUDIO_SLSI.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/APSV_AUDIO_SLSI.bin \
+    vendor/samsung/x1s/proprietary/vendor/firmware/APTV_AUDIO_SLSI.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/APTV_AUDIO_SLSI.bin \
     vendor/samsung/x1s/proprietary/vendor/firmware/AP_AUDIO_SLSI.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/AP_AUDIO_SLSI.bin \
     vendor/samsung/x1s/proprietary/vendor/firmware/NPU_NFD_P4.7.tflite:$(TARGET_COPY_OUT_VENDOR)/firmware/NPU_NFD_P4.7.tflite \
     vendor/samsung/x1s/proprietary/vendor/firmware/SoundBoosterParam.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/SoundBoosterParam.bin \
     vendor/samsung/x1s/proprietary/vendor/firmware/a2dpcom.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/a2dpcom.bin \
     vendor/samsung/x1s/proprietary/vendor/firmware/abox_tplg.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/abox_tplg.bin \
     vendor/samsung/x1s/proprietary/vendor/firmware/abox_tplg.conf:$(TARGET_COPY_OUT_VENDOR)/firmware/abox_tplg.conf \
+    vendor/samsung/x1s/proprietary/vendor/firmware/avsyncmix.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/avsyncmix.bin \
     vendor/samsung/x1s/proprietary/vendor/firmware/bayer2rgb.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/bayer2rgb.bin \
     vendor/samsung/x1s/proprietary/vendor/firmware/bayer2yuv.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/bayer2yuv.bin \
     vendor/samsung/x1s/proprietary/vendor/firmware/bcm4375B1_murata.hcd:$(TARGET_COPY_OUT_VENDOR)/firmware/bcm4375B1_murata.hcd \
@@ -221,6 +221,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/x1s/proprietary/vendor/firmware/sv.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/sv.bin \
     vendor/samsung/x1s/proprietary/vendor/firmware/txse1.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/txse1.bin \
     vendor/samsung/x1s/proprietary/vendor/firmware/txse2.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/txse2.bin \
+    vendor/samsung/x1s/proprietary/vendor/firmware/txse3.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/txse3.bin \
     vendor/samsung/x1s/proprietary/vendor/firmware/usbin.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/usbin.bin \
     vendor/samsung/x1s/proprietary/vendor/firmware/usbout.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/usbout.bin \
     vendor/samsung/x1s/proprietary/vendor/firmware/volumemonitor.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/volumemonitor.bin \
@@ -251,7 +252,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/x1s/proprietary/vendor/lib/libOpenCv.camera.samsung.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOpenCv.camera.samsung.so \
     vendor/samsung/x1s/proprietary/vendor/lib/libSEF.quram.so:$(TARGET_COPY_OUT_VENDOR)/lib/libSEF.quram.so \
     vendor/samsung/x1s/proprietary/vendor/lib/libSamsungPostProcessConvertor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libSamsungPostProcessConvertor.so \
-    vendor/samsung/x1s/proprietary/vendor/lib/lib_SamsungRec_08010.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib_SamsungRec_08010.so \
+    vendor/samsung/x1s/proprietary/vendor/lib/lib_SamsungRec_08020.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib_SamsungRec_08020.so \
     vendor/samsung/x1s/proprietary/vendor/lib/lib_SoundAlive_3DPosition_ver202.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib_SoundAlive_3DPosition_ver202.so \
     vendor/samsung/x1s/proprietary/vendor/lib/lib_SoundAlive_AlbumArt_ver105.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib_SoundAlive_AlbumArt_ver105.so \
     vendor/samsung/x1s/proprietary/vendor/lib/lib_SoundAlive_SRC384_ver320.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib_SoundAlive_SRC384_ver320.so \
@@ -369,6 +370,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/x1s/proprietary/vendor/lib/vendor.samsung.camera.device@5.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.samsung.camera.device@5.0-impl.so \
     vendor/samsung/x1s/proprietary/vendor/lib/vendor.samsung.hardware.bluetooth.a2dp@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.samsung.hardware.bluetooth.a2dp@1.0.so \
     vendor/samsung/x1s/proprietary/vendor/lib/vendor.samsung.hardware.camera.device@5.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.samsung.hardware.camera.device@5.0.so \
+    vendor/samsung/x1s/proprietary/vendor/lib/vendor.samsung.hardware.camera.provider@4.0-legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.samsung.hardware.camera.provider@4.0-legacy.so \
     vendor/samsung/x1s/proprietary/vendor/lib/vendor.samsung.hardware.camera.provider@4.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.samsung.hardware.camera.provider@4.0.so \
     vendor/samsung/x1s/proprietary/vendor/lib/vendor.samsung.hardware.radio.bridge@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.samsung.hardware.radio.bridge@2.0.so \
     vendor/samsung/x1s/proprietary/vendor/lib/vendor.samsung.hardware.radio.channel@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.samsung.hardware.radio.channel@2.0.so \
@@ -465,7 +467,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/x1s/proprietary/vendor/lib64/libgraphgen_intermediate_process.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgraphgen_intermediate_process.so \
     vendor/samsung/x1s/proprietary/vendor/lib64/libgraphgen_misc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgraphgen_misc.so \
     vendor/samsung/x1s/proprietary/vendor/lib64/libgraphgen_network.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgraphgen_network.so \
-    vendor/samsung/x1s/proprietary/vendor/lib64/libgraphgen_partition.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgraphgen_partition.so \
     vendor/samsung/x1s/proprietary/vendor/lib64/libhdr10p_m2l.exynos990.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdr10p_m2l.exynos990.so \
     vendor/samsung/x1s/proprietary/vendor/lib64/libhwjpeg.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhwjpeg.so \
     vendor/samsung/x1s/proprietary/vendor/lib64/libhwjsqz.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhwjsqz.so \
@@ -541,6 +542,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/x1s/proprietary/vendor/lib64/vendor.samsung.hardware.audio@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.audio@1.0.so \
     vendor/samsung/x1s/proprietary/vendor/lib64/vendor.samsung.hardware.bluetooth.a2dp@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.bluetooth.a2dp@1.0.so \
     vendor/samsung/x1s/proprietary/vendor/lib64/vendor.samsung.hardware.camera.device@5.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.camera.device@5.0.so \
+    vendor/samsung/x1s/proprietary/vendor/lib64/vendor.samsung.hardware.camera.provider@4.0-legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.camera.provider@4.0-legacy.so \
     vendor/samsung/x1s/proprietary/vendor/lib64/vendor.samsung.hardware.camera.provider@4.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.camera.provider@4.0.so \
     vendor/samsung/x1s/proprietary/vendor/lib64/vendor.samsung.hardware.gnss@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.gnss@2.0.so \
     vendor/samsung/x1s/proprietary/vendor/lib64/vendor.samsung.hardware.nfc@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung.hardware.nfc@2.0.so \
@@ -554,7 +556,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/x1s/proprietary/vendor/lib64/vendor.samsung_slsi.hardware.configstore@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung_slsi.hardware.configstore@1.0.so \
     vendor/samsung/x1s/proprietary/vendor/lib64/vendor.samsung_slsi.hardware.eden_runtime@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung_slsi.hardware.eden_runtime@1.0-impl.so \
     vendor/samsung/x1s/proprietary/vendor/lib64/vendor.samsung_slsi.hardware.eden_runtime@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.samsung_slsi.hardware.eden_runtime@1.0.so \
-    vendor/samsung/x1s/proprietary/vendor/tee/00000000-0000-0000-0000-000000000046:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-000000000046 \
     vendor/samsung/x1s/proprietary/vendor/tee/00000000-0000-0000-0000-00000000dead:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-00000000dead \
     vendor/samsung/x1s/proprietary/vendor/tee/00000000-0000-0000-0000-000000010081:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-000000010081 \
     vendor/samsung/x1s/proprietary/vendor/tee/00000000-0000-0000-0000-000000020081:$(TARGET_COPY_OUT_VENDOR)/tee/00000000-0000-0000-0000-000000020081 \

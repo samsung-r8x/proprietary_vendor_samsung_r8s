@@ -20,7 +20,7 @@ on post-fs-data
 
     # for WIFI MEMDUMP
     # The default value of below memdump file is set in SecProductFeature
-    write /data/vendor/conn/.memdump.info 2
+    #write /data/vendor/conn/.memdump.info 2
     chown wifi wifi /data/vendor/conn/.memdump.info
     chmod 0640 /data/vendor/conn/.memdump.info
 

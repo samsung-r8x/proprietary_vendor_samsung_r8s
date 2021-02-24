@@ -507,6 +507,10 @@
         <ctl name="ABOX NSRC2" value="UAIF3" />
     </path>
 
+    <path name="route-uaif3-to-nsrc1">
+        <ctl name="ABOX NSRC1" value="UAIF3" />
+    </path>
+
     <path name="route-uaif3-to-nsrc4">
         <ctl name="ABOX NSRC4" value="UAIF3" />
     </path>
@@ -659,6 +663,14 @@
     <path name="route-vssadapter-sv-txse2-vpcmdai0">
         <ctl name="ABOX MCD_DNN_A" value="VSS_TXADAPTER" />
         <ctl name="ABOX MCD_TXSE2_A" value="MCD_DNN" />
+        <!--ctl name="ABOX VPCMIN_DAI0_A" value="MCD_TXSE2" /-->
+        <ctl name="ABOX CHMATCHER_A" value="MCD_TXSE2" />
+        <ctl name="ABOX VPCMIN_DAI0_A" value="CHMATCHER" />
+    </path>
+
+    <path name="route-vssadapter-txse3-txse2-vpcmdai0">
+        <ctl name="ABOX MCD_TXSE3_A" value="VSS_TXADAPTER" />
+        <ctl name="ABOX MCD_TXSE2_A" value="MCD_TXSE3" />
         <!--ctl name="ABOX VPCMIN_DAI0_A" value="MCD_TXSE2" /-->
         <ctl name="ABOX CHMATCHER_A" value="MCD_TXSE2" />
         <ctl name="ABOX VPCMIN_DAI0_A" value="CHMATCHER" />
@@ -1201,6 +1213,14 @@
         <ctl name="ABOX WDMA1 Period" value="240" />
     </path>
 
+    <path name="set-bt-mic-wdma1-16bit-config">
+        <!-- wdma1 channels are set Period 240 for BT Mic input -->
+        <ctl name="ABOX WDMA1 Width" value="16" />
+        <ctl name="ABOX WDMA1 Channel" value="2" />
+        <ctl name="ABOX WDMA1 Rate" value="48000" />
+        <ctl name="ABOX WDMA1 Period" value="240" />
+    </path>
+
     <path name="route-call-spkrcv-refdata-vssadapter_b">
         <!-- SPK AMP reference data with 4ch -->
         <path name="set-call-spkrcv-refdata-wdma1-16bit-config" />
@@ -1272,6 +1292,24 @@
     <path name="route-telerx-to-vpcmindai6">
         <!-- CallRec component output is used for Telephony Rx also -->
         <ctl name="ABOX VPCMIN_DAI6_A" value="CALLREC" />
+    </path>
+
+    <!-- Camcorder Multi-Device record path routing  -->
+    <path name="route-btsco-record-uaif3-wdma1">
+        <path name="route-uaif3-to-nsrc1" />
+        <path name="route-nsrc1-to-wdma1" />
+    </path>
+
+    <path name="route-tdmdemux3-to-avsyncmix_a">
+        <ctl name="ABOX MCD_AVSYNCMIX_A" value="TDM_DEMUX3" />
+    </path>
+
+    <path name="route-wdma1-to-avsyncmix_b">
+        <ctl name="ABOX MCD_AVSYNCMIX_B" value="WDMA1" />
+    </path>
+
+    <path name="route-avsyncmix-to-vpcmindai0">
+        <ctl name="ABOX VPCMIN_DAI0_A" value="MCD_AVSYNCMIX" />
     </path>
 
     <!-- Common CODEC configurations -->
@@ -1450,6 +1488,17 @@
 
     <path name="upper-spk-amp-unmute">
         <ctl name="Left AMP Mute" value="Unmuted" />
+    </path>
+
+    <!-- Amp mute control -->
+    <path name="spk-amp-mute">
+        <ctl name="Left AMP Mute" value="Muted" />
+        <ctl name="Right AMP Mute" value="Muted" />
+    </path>
+
+    <path name="spk-amp-unmute">
+        <ctl name="Left AMP Mute" value="Unmuted" />
+        <ctl name="Right AMP Mute" value="Unmuted" />
     </path>
 
     <!-- MCD Solution mixer settings -->
@@ -2063,6 +2112,14 @@
     </path>
 
     <path name="communication-dex-dual-speaker">
+        <path name="communication-dual-speaker" />
+    </path>
+
+    <path name="communication-tv-speaker">
+        <path name="communication-speaker" />
+    </path>
+
+    <path name="communication-tv-dual-speaker">
         <path name="communication-dual-speaker" />
     </path>
 
@@ -2967,6 +3024,23 @@
         <path name="media-usb-headset-mic" />
     </path>
 
+    <path name="camcorder-multi-mic-bt-sco-headset-in">
+        <path name="dev-quad-mic" />
+        <path name="route-btsco-record-uaif3-wdma1" />
+        <path name="route-wdma1-to-avsyncmix_b" />
+        <path name="set-bt-mic-wdma1-16bit-config" />
+        <path name="route-seriallif-24bit-to-wdma4" />
+        <path name="route-wdma4-to-tdmdemux3" />
+        <path name="route-tdmdemux3-to-avsyncmix_a" />
+        <!-- primary stream node -->
+        <path name="route-avsyncmix-to-vpcmindai0" />
+        <!-- fast stream node -->
+        <path name="route-wdma4-to-tdmdemux0" />
+        <path name="route-tdmdemux0-to-vpcmindai1" />
+        <!-- low latency stream node -->
+        <path name="route-tdmdemux0-to-vpcmindai2" />
+    </path>
+
     <!-- Recognition Input paths -->
     <path name="recognition-mic">
         <path name="media-mic" />
@@ -3224,6 +3298,20 @@
 
     <path name="communication-dex-dual-speaker-mic">
         <path name="communication-dual-speaker-mic" />
+    </path>
+
+    <path name="communication-tv-speaker-mic">
+        <path name="dev-multi-mic" />
+        <path name="route-seriallif-apcall-multi-mic" />
+        <path name="route-call-spkrcv-refdata-vssadapter_b" />
+        <path name="route-tdmdemux3-to-vssadapter_a" />
+        <path name="route-vssadapter-txse3-txse2-vpcmdai0" />
+        <path name="route-txse-to-callrec_b" />
+        <path name="route-callrec-to-vpcmindai5" />
+    </path>
+
+    <path name="communication-tv-dual-speaker-mic">
+        <path name="communication-tv-speaker-mic" />
     </path>
 
     <path name="communication-headphone-mic">

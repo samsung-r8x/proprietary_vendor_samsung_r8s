@@ -44,11 +44,6 @@ service gpsd /vendor/bin/hw/gps.sh
     group system inet net_raw wakelock
     ioprio be 0
     seclabel u:r:gpsd:s0
-service gllogd /vendor/bin/hw/gllogd
-    class main
-    user gps
-    group system inet net_raw wakelock
-    ioprio be 0
 
 on property:dev.gnss.silentlogging=ON
     mkdir /data/vendor/gps/silentGnssLogging 0771 system system

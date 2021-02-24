@@ -13,7 +13,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/x1s/proprietary/system/etc/init/init.rilepdg.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/init.rilepdg.rc \
     vendor/samsung/x1s/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
     vendor/samsung/x1s/proprietary/system/etc/restart_radio_process.sh:$(TARGET_COPY_OUT_SYSTEM)/etc/restart_radio_process.sh \
-    vendor/samsung/x1s/proprietary/system/etc/somxreg.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/somxreg.conf \
     vendor/samsung/x1s/proprietary/system/lib/libatparser.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libatparser.so \
     vendor/samsung/x1s/proprietary/system/lib/libfactoryutil.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libfactoryutil.so \
     vendor/samsung/x1s/proprietary/system/lib/libfloatingfeature.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libfloatingfeature.so \
@@ -24,25 +23,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/x1s/proprietary/system/lib/libsecnativefeature.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsecnativefeature.so \
     vendor/samsung/x1s/proprietary/system/lib/libsecril-client.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsecril-client.so \
     vendor/samsung/x1s/proprietary/system/lib/libsecure_storage.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsecure_storage.so \
-    vendor/samsung/x1s/proprietary/system/lib/libsomx263dsw.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsomx263dsw.so \
-    vendor/samsung/x1s/proprietary/system/lib/libsomx264dsw.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsomx264dsw.so \
-    vendor/samsung/x1s/proprietary/system/lib/libsomxaacd.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsomxaacd.so \
-    vendor/samsung/x1s/proprietary/system/lib/libsomxadpcmd.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsomxadpcmd.so \
-    vendor/samsung/x1s/proprietary/system/lib/libsomxamrd.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsomxamrd.so \
-    vendor/samsung/x1s/proprietary/system/lib/libsomxaped.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsomxaped.so \
-    vendor/samsung/x1s/proprietary/system/lib/libsomxcmn.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsomxcmn.so \
-    vendor/samsung/x1s/proprietary/system/lib/libsomxcore.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsomxcore.so \
-    vendor/samsung/x1s/proprietary/system/lib/libsomxflacd.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsomxflacd.so \
-    vendor/samsung/x1s/proprietary/system/lib/libsomxhevcdsw.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsomxhevcdsw.so \
-    vendor/samsung/x1s/proprietary/system/lib/libsomxmp3d.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsomxmp3d.so \
-    vendor/samsung/x1s/proprietary/system/lib/libsomxmp43d.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsomxmp43d.so \
-    vendor/samsung/x1s/proprietary/system/lib/libsomxmp4vdsw.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsomxmp4vdsw.so \
-    vendor/samsung/x1s/proprietary/system/lib/libsomxnaace.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsomxnaace.so \
-    vendor/samsung/x1s/proprietary/system/lib/libsomxvc1dsw.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsomxvc1dsw.so \
-    vendor/samsung/x1s/proprietary/system/lib/libsomxvp8d.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsomxvp8d.so \
-    vendor/samsung/x1s/proprietary/system/lib/libsomxwmad.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsomxwmad.so \
-    vendor/samsung/x1s/proprietary/system/lib/libsomxwmv7d.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsomxwmv7d.so \
-    vendor/samsung/x1s/proprietary/system/lib/libsomxwmv8d.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsomxwmv8d.so \
     vendor/samsung/x1s/proprietary/system/lib/libstagefright_omx_utils.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libstagefright_omx_utils.so \
     vendor/samsung/x1s/proprietary/system/lib/vendor.samsung.hardware.security.widevine.keyprov@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.samsung.hardware.security.widevine.keyprov@1.0.so \
     vendor/samsung/x1s/proprietary/system/lib/vendor.samsung_slsi.hardware.ExynosHWCServiceTW@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.samsung_slsi.hardware.ExynosHWCServiceTW@1.0.so \
@@ -60,25 +40,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/x1s/proprietary/system/lib64/libsecnativefeature.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsecnativefeature.so \
     vendor/samsung/x1s/proprietary/system/lib64/libsecril-client.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsecril-client.so \
     vendor/samsung/x1s/proprietary/system/lib64/libsecure_storage.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsecure_storage.so \
-    vendor/samsung/x1s/proprietary/system/lib64/libsomx263dsw.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsomx263dsw.so \
-    vendor/samsung/x1s/proprietary/system/lib64/libsomx264dsw.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsomx264dsw.so \
-    vendor/samsung/x1s/proprietary/system/lib64/libsomxaacd.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsomxaacd.so \
-    vendor/samsung/x1s/proprietary/system/lib64/libsomxadpcmd.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsomxadpcmd.so \
-    vendor/samsung/x1s/proprietary/system/lib64/libsomxamrd.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsomxamrd.so \
-    vendor/samsung/x1s/proprietary/system/lib64/libsomxaped.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsomxaped.so \
-    vendor/samsung/x1s/proprietary/system/lib64/libsomxcmn.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsomxcmn.so \
-    vendor/samsung/x1s/proprietary/system/lib64/libsomxcore.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsomxcore.so \
-    vendor/samsung/x1s/proprietary/system/lib64/libsomxflacd.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsomxflacd.so \
-    vendor/samsung/x1s/proprietary/system/lib64/libsomxhevcdsw.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsomxhevcdsw.so \
-    vendor/samsung/x1s/proprietary/system/lib64/libsomxmp3d.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsomxmp3d.so \
-    vendor/samsung/x1s/proprietary/system/lib64/libsomxmp43d.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsomxmp43d.so \
-    vendor/samsung/x1s/proprietary/system/lib64/libsomxmp4vdsw.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsomxmp4vdsw.so \
-    vendor/samsung/x1s/proprietary/system/lib64/libsomxnaace.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsomxnaace.so \
-    vendor/samsung/x1s/proprietary/system/lib64/libsomxvc1dsw.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsomxvc1dsw.so \
-    vendor/samsung/x1s/proprietary/system/lib64/libsomxvp8d.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsomxvp8d.so \
-    vendor/samsung/x1s/proprietary/system/lib64/libsomxwmad.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsomxwmad.so \
-    vendor/samsung/x1s/proprietary/system/lib64/libsomxwmv7d.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsomxwmv7d.so \
-    vendor/samsung/x1s/proprietary/system/lib64/libsomxwmv8d.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsomxwmv8d.so \
     vendor/samsung/x1s/proprietary/system/lib64/libstagefright_omx_utils.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libstagefright_omx_utils.so \
     vendor/samsung/x1s/proprietary/system/lib64/vendor.samsung.hardware.nfc@2.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.samsung.hardware.nfc@2.0.so \
     vendor/samsung/x1s/proprietary/system/lib64/vendor.samsung.hardware.security.widevine.keyprov@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.samsung.hardware.security.widevine.keyprov@1.0.so \
@@ -160,7 +121,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/x1s/proprietary/vendor/etc/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/r_submix_audio_policy_configuration.xml \
     vendor/samsung/x1s/proprietary/vendor/etc/sensor/lhd.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensor/lhd.conf \
     vendor/samsung/x1s/proprietary/vendor/etc/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
-    vendor/samsung/x1s/proprietary/vendor/etc/somxreg.conf:$(TARGET_COPY_OUT_VENDOR)/etc/somxreg.conf \
     vendor/samsung/x1s/proprietary/vendor/etc/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml \
     vendor/samsung/x1s/proprietary/vendor/etc/wifi/indoorchannel.info:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/indoorchannel.info \
     vendor/samsung/x1s/proprietary/vendor/firmware/APBargeIn_AUDIO_SLSI.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/APBargeIn_AUDIO_SLSI.bin \
@@ -367,24 +327,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/x1s/proprietary/vendor/lib/libsecure_storage.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsecure_storage.so \
     vendor/samsung/x1s/proprietary/vendor/lib/libsemnativecarrierfeature.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsemnativecarrierfeature.so \
     vendor/samsung/x1s/proprietary/vendor/lib/libsensorlistener.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensorlistener.so \
-    vendor/samsung/x1s/proprietary/vendor/lib/libsomx263dsw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsomx263dsw.so \
-    vendor/samsung/x1s/proprietary/vendor/lib/libsomx264dsw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsomx264dsw.so \
-    vendor/samsung/x1s/proprietary/vendor/lib/libsomxadpcmd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsomxadpcmd.so \
-    vendor/samsung/x1s/proprietary/vendor/lib/libsomxamrd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsomxamrd.so \
-    vendor/samsung/x1s/proprietary/vendor/lib/libsomxaped.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsomxaped.so \
-    vendor/samsung/x1s/proprietary/vendor/lib/libsomxcmn.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsomxcmn.so \
-    vendor/samsung/x1s/proprietary/vendor/lib/libsomxcore_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsomxcore_vendor.so \
-    vendor/samsung/x1s/proprietary/vendor/lib/libsomxflacd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsomxflacd.so \
-    vendor/samsung/x1s/proprietary/vendor/lib/libsomxhevcdsw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsomxhevcdsw.so \
-    vendor/samsung/x1s/proprietary/vendor/lib/libsomxmp3d.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsomxmp3d.so \
-    vendor/samsung/x1s/proprietary/vendor/lib/libsomxmp43d.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsomxmp43d.so \
-    vendor/samsung/x1s/proprietary/vendor/lib/libsomxmp4vdsw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsomxmp4vdsw.so \
-    vendor/samsung/x1s/proprietary/vendor/lib/libsomxnaace.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsomxnaace.so \
-    vendor/samsung/x1s/proprietary/vendor/lib/libsomxvc1dsw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsomxvc1dsw.so \
-    vendor/samsung/x1s/proprietary/vendor/lib/libsomxvp8d.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsomxvp8d.so \
-    vendor/samsung/x1s/proprietary/vendor/lib/libsomxwmad.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsomxwmad.so \
-    vendor/samsung/x1s/proprietary/vendor/lib/libsomxwmv7d.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsomxwmv7d.so \
-    vendor/samsung/x1s/proprietary/vendor/lib/libsomxwmv8d.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsomxwmv8d.so \
     vendor/samsung/x1s/proprietary/vendor/lib/libstagefright_omx_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_omx_vendor.so \
     vendor/samsung/x1s/proprietary/vendor/lib/libstagefrighthw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefrighthw.so \
     vendor/samsung/x1s/proprietary/vendor/lib/libsynaFpSensorTestNwd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsynaFpSensorTestNwd.so \
@@ -557,24 +499,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/x1s/proprietary/vendor/lib64/libsecure_storage.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsecure_storage.so \
     vendor/samsung/x1s/proprietary/vendor/lib64/libsemnativecarrierfeature.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsemnativecarrierfeature.so \
     vendor/samsung/x1s/proprietary/vendor/lib64/libsensorlistener.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensorlistener.so \
-    vendor/samsung/x1s/proprietary/vendor/lib64/libsomx263dsw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsomx263dsw.so \
-    vendor/samsung/x1s/proprietary/vendor/lib64/libsomx264dsw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsomx264dsw.so \
-    vendor/samsung/x1s/proprietary/vendor/lib64/libsomxadpcmd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsomxadpcmd.so \
-    vendor/samsung/x1s/proprietary/vendor/lib64/libsomxamrd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsomxamrd.so \
-    vendor/samsung/x1s/proprietary/vendor/lib64/libsomxaped.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsomxaped.so \
-    vendor/samsung/x1s/proprietary/vendor/lib64/libsomxcmn.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsomxcmn.so \
-    vendor/samsung/x1s/proprietary/vendor/lib64/libsomxcore_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsomxcore_vendor.so \
-    vendor/samsung/x1s/proprietary/vendor/lib64/libsomxflacd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsomxflacd.so \
-    vendor/samsung/x1s/proprietary/vendor/lib64/libsomxhevcdsw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsomxhevcdsw.so \
-    vendor/samsung/x1s/proprietary/vendor/lib64/libsomxmp3d.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsomxmp3d.so \
-    vendor/samsung/x1s/proprietary/vendor/lib64/libsomxmp43d.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsomxmp43d.so \
-    vendor/samsung/x1s/proprietary/vendor/lib64/libsomxmp4vdsw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsomxmp4vdsw.so \
-    vendor/samsung/x1s/proprietary/vendor/lib64/libsomxnaace.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsomxnaace.so \
-    vendor/samsung/x1s/proprietary/vendor/lib64/libsomxvc1dsw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsomxvc1dsw.so \
-    vendor/samsung/x1s/proprietary/vendor/lib64/libsomxvp8d.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsomxvp8d.so \
-    vendor/samsung/x1s/proprietary/vendor/lib64/libsomxwmad.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsomxwmad.so \
-    vendor/samsung/x1s/proprietary/vendor/lib64/libsomxwmv7d.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsomxwmv7d.so \
-    vendor/samsung/x1s/proprietary/vendor/lib64/libsomxwmv8d.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsomxwmv8d.so \
     vendor/samsung/x1s/proprietary/vendor/lib64/libstagefrighthw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstagefrighthw.so \
     vendor/samsung/x1s/proprietary/vendor/lib64/libsynaFpSensorTestNwd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsynaFpSensorTestNwd.so \
     vendor/samsung/x1s/proprietary/vendor/lib64/libteecl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libteecl.so \

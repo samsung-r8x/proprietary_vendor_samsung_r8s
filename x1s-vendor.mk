@@ -288,7 +288,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/x1s/proprietary/vendor/lib/libenn_dsp_dal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libenn_dsp_dal.so \
     vendor/samsung/x1s/proprietary/vendor/lib/libenn_dsp_fw_graph_parser.so:$(TARGET_COPY_OUT_VENDOR)/lib/libenn_dsp_fw_graph_parser.so \
     vendor/samsung/x1s/proprietary/vendor/lib/libenn_dsp_kernels_cpu.so:$(TARGET_COPY_OUT_VENDOR)/lib/libenn_dsp_kernels_cpu.so \
-    vendor/samsung/x1s/proprietary/vendor/lib/libepic_helper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libepic_helper.so \
+    vendor/samsung/x1s/proprietary/vendor/lib/libepicoperator.so:$(TARGET_COPY_OUT_VENDOR)/lib/libepicoperator.so \
     vendor/samsung/x1s/proprietary/vendor/lib/libexynoscamera3.so:$(TARGET_COPY_OUT_VENDOR)/lib/libexynoscamera3.so \
     vendor/samsung/x1s/proprietary/vendor/lib/libexynoscamera_bayergdc_plugin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libexynoscamera_bayergdc_plugin.so \
     vendor/samsung/x1s/proprietary/vendor/lib/libexynoscamera_fakefusion.so:$(TARGET_COPY_OUT_VENDOR)/lib/libexynoscamera_fakefusion.so \
@@ -441,7 +441,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/x1s/proprietary/vendor/lib64/libenn_dsp_dal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libenn_dsp_dal.so \
     vendor/samsung/x1s/proprietary/vendor/lib64/libenn_dsp_fw_graph_parser.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libenn_dsp_fw_graph_parser.so \
     vendor/samsung/x1s/proprietary/vendor/lib64/libenn_dsp_kernels_cpu.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libenn_dsp_kernels_cpu.so \
-    vendor/samsung/x1s/proprietary/vendor/lib64/libepic_helper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libepic_helper.so \
+    vendor/samsung/x1s/proprietary/vendor/lib64/libepicoperator.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libepicoperator.so \
     vendor/samsung/x1s/proprietary/vendor/lib64/libexynoscamera3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libexynoscamera3.so \
     vendor/samsung/x1s/proprietary/vendor/lib64/libexynoscamera_bayergdc_plugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libexynoscamera_bayergdc_plugin.so \
     vendor/samsung/x1s/proprietary/vendor/lib64/libexynoscamera_fakefusion.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libexynoscamera_fakefusion.so \

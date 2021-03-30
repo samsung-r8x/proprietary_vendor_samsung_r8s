@@ -344,6 +344,8 @@ ALBtelecom"ATmobile
 !
 28020PrimeTel PLC"PrimeTel
 
+28022Cablenet"Cablenet
+
 28201GEO-GEOCELL"GCELL
 
 28202MAGTI-GSM-GEO"MAGTI
@@ -1881,8 +1883,8 @@ TelkomSA-R"Telkom-R
 74404TIGO PY"TIGO
  
 74405PY Personal"Personal
- 
-74602SR.TELESUR.GSM"TeleG
+
+74602TELESUR"TELESUR
 
 74603DIGICEL"DIGICEL
 
@@ -1911,4 +1913,4 @@ AeroMobile"AeroMob
 
 90146	Telecom26"T26
 
-90150EchoStar Mobile"EML(Published TS25 Database 07 December 2020
+90150EchoStar Mobile"EML&Published TS.25 Database 01 March 2021

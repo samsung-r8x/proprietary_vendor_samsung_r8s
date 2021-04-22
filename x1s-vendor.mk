@@ -413,7 +413,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/x1s/proprietary/vendor/lib64/libbauthserver.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbauthserver.so \
     vendor/samsung/x1s/proprietary/vendor/lib64/libbauthtzcommon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbauthtzcommon.so \
     vendor/samsung/x1s/proprietary/vendor/lib64/libbayergdccore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbayergdccore.so \
-    vendor/samsung/x1s/proprietary/vendor/lib64/libbt-vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbt-vendor.so \
     vendor/samsung/x1s/proprietary/vendor/lib64/libcommon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcommon.so \
     vendor/samsung/x1s/proprietary/vendor/lib64/libcrane_compiler.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcrane_compiler.so \
     vendor/samsung/x1s/proprietary/vendor/lib64/libcsc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcsc.so \
